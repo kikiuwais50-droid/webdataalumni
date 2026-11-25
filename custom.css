@@ -1,0 +1,114 @@
+/**
+ * Sistem Pendataan Alumni - Custom CSS
+ */
+
+/* Penanda field formulir yang wajib diisi */
+.required::after {
+    content: " *";
+    color: #e74a3b;
+    font-weight: bold;
+}
+
+/* Penyesuaian tabel agar nyaman dibaca */
+.table-responsive {
+    min-height: 200px;
+}
+
+.table th {
+    vertical-align: middle;
+    background-color: #f8f9fc;
+    color: #4e73df;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Badge status kustom */
+.badge {
+    font-size: 85%;
+    font-weight: 600;
+    padding: 0.4em 0.6em;
+}
+
+/* Tombol aksi tabel */
+.btn-action-group .btn {
+    margin-right: 4px;
+}
+
+.btn-action-group .btn:last-child {
+    margin-right: 0;
+}
+
+/* Profil Styling */
+.avatar-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avatar-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(78, 115, 223, 0.35) !important;
+}
+.toggle-pwd {
+    cursor: pointer;
+}
+
+/* Print Styling for Laporan */
+.print-only {
+    display: none;
+}
+@media print {
+    .sidebar, 
+    .topbar, 
+    .sticky-footer, 
+    .scroll-to-top, 
+    .d-print-none, 
+    .btn, 
+    form.d-print-none,
+    nav.topbar {
+        display: none !important;
+    }
+    #content-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff !important;
+    }
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 11pt;
+    }
+    .container-fluid {
+        padding: 0 !important;
+    }
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+        margin-bottom: 1rem !important;
+    }
+    .card-header {
+        background: transparent !important;
+        border-bottom: 2px solid #333 !important;
+        padding: 0.5rem 0 !important;
+    }
+    .card-body {
+        padding: 0 !important;
+    }
+    .table th, .table td {
+        border-color: #444 !important;
+        color: #000 !important;
+        padding: 0.35rem 0.5rem !important;
+        font-size: 9.5pt;
+    }
+    .badge {
+        border: 1px solid #777;
+        color: #000 !important;
+        background: transparent !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+}
+
